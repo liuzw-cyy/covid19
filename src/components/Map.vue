@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="title"><i></i>疫情地图</p>
-    <Tabs @tab-click="handleTabClick">
+    <Tabs>
       <Tab label="国内疫情" name="china">
         <div id="chinaMap"></div>
       </Tab>
@@ -67,9 +67,6 @@ export default {
           break;
       }
       return color;
-    },
-    handleTabClick(tab) {
-      console.log(tab);
     },
   },
 };
